@@ -432,6 +432,11 @@
       "name": "robinhood",
       "source": "third_party/robinhood",
       "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account."
+    },
+    {
+      "name": "coinbase",
+      "source": "third_party/coinbase",
+      "description": "Check balances, get quotes, and preview or place trades."
     }
   ]
 }
