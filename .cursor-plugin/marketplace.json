@@ -334,6 +334,11 @@
       "description": "Browse, search, and read Microsoft OneDrive files."
     },
     {
+      "name": "sharepoint",
+      "source": "third_party/sharepoint",
+      "description": "Search and read Microsoft SharePoint sites, document libraries, files, and lists."
+    },
+    {
       "name": "teams",
       "source": "third_party/teams",
       "description": "Search, read, and send Microsoft Teams chats and channel messages."
