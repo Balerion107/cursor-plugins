@@ -141,7 +141,7 @@
     {
       "name": "x",
       "source": "third_party/x",
-      "description": "Search posts, read timelines, pull trends, and manage bookmarks."
+      "description": "Search posts, read timelines, pull trends, manage bookmarks, and access X Chat."
     },
     {
       "name": "clay",
