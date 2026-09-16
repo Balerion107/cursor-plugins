@@ -48,7 +48,7 @@ python3 -m venv .venv && .venv/bin/pip install -U pip chatxdk
 HELPER=/path/to/xchat-lite/.venv/bin/python
 SCRIPT=/path/to/xchat-lite/xchat_lite.py
 
-$HELPER $SCRIPT --user-id "$UID" --key-version "$VER" --juicebox "$JUICEBOX_PATH" unlock-check
+$HELPER $SCRIPT --user-id "$X_USER_ID" --key-version "$VER" --juicebox "$JUICEBOX_PATH" unlock-check
 ```
 
 ## Split of duties
@@ -117,12 +117,12 @@ Never `echo $CHAT_PIN`. Never `cat` PIN files. Write juicebox config from MCP to
 ## Session bootstrap (once per working session)
 
 1. Confirm Chat tools exist. If not, missing-permission line above.
-2. `get_users_me` → user id.
+2. `get_users_me` → numeric X user id (`$X_USER_ID`). Do not use the shell’s `$UID` (Unix account id).
 3. `get_users_public_key` for self with the valid `public_key.fields` list.
 4. Persist `juicebox_config` as JSON (chmod 600).
 5. Note `public_key_version` as `--key-version`.
 6. Secret-request **Chat PIN** → `CHAT_PIN` if not already in the secret store.
-7. `unlock-check`. On failure: wrong PIN, incomplete Chat onboarding, or stale juicebox — refresh public key / juicebox; do not brute-force the PIN.
+7. `unlock-check`. On failure: wrong PIN, wrong `--user-id` (must be the X id from `get_users_me`, not the OS `$UID`), incomplete Chat onboarding, or stale juicebox — refresh public key / juicebox; do not brute-force the PIN.
 
 ## Read / summarize
 
