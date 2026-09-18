@@ -70,10 +70,10 @@ The contract above drives one task to one finish condition. Some nights hold mor
 /poteto-mode autopilot these five changes but stack them, don't ship. i'll land the stack in the morning.
 ```
 
-[Orchestrate](../../skills/poteto-mode/playbooks/orchestrate.md) is for a program that outlives any single agent: multi-day, many stacked PRs, fleets of subagents under one standing coordinator chat. The coordinator authors briefs, collects what its subagents finish, keeps the lowest unmerged PR green, and never writes code itself. It's deliberately heavy machinery. If one agent could finish the work in a session, the playbook itself routes you back to the overnight contract above:
+A program that runs for days across many PRs starts as a plan. The [Multi-phase plan](../../skills/poteto-mode/playbooks/multi-phase-plan.md) playbook writes a checklist with one section per PR and the evidence that checks each box. The plan names Autopilot-full or Autopilot-stack as its execution playbook, and nothing runs until you read the plan and say go:
 
 ```text
-/poteto-mode orchestrate the store migration. own it until every package is converted and merged. i'll check in twice a day.
+/poteto-mode write a multi-phase plan for the store migration. one pr per package. i'll read it and give the go before bed.
 ```
 
 **Pitfall:** a duration is not a finish condition. "work on this for 4 hours" gives the agent nothing to check, and you'll wake up to four hours of motion instead of a result. Give `/loop` a predicate that can pass or fail.
