@@ -441,7 +441,12 @@
     {
       "name": "x-money",
       "source": "third_party/x-money",
-      "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history."
+      "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history.",
+      "minClientVersions": {
+        "cursor": "never",
+        "grokbot": "0.52.0",
+        "sand": "0.52.0"
+      }
     }
   ]
 }
