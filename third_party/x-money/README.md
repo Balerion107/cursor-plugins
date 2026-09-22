@@ -45,15 +45,18 @@ Access tokens expire after 15 minutes and refresh automatically. Tokens are stor
 
 ## What agents can do
 
-| Tool | What it does |
+| Category | Capabilities |
 | --- | --- |
-| `get_balance` | Available balance of your main, secondary, and joint accounts |
-| `get_transactions` | Your transaction history, newest first, with optional filters |
-| `send_money` | Send money from your X Money balance to another X user by @handle or user id |
-| `request_money` | Ask another X user to pay you through X Money |
-| `get_card_details` | Create a single-use virtual card for one online purchase at one merchant |
+| Balances | Available balance of your main, secondary, and joint accounts |
+| Transactions | Your transaction history, newest first, with optional filters |
+| Payments | Send money from your X Money balance to another X user, or ask another X user to pay you |
+| Cards | Create a single-use virtual card for one online purchase at one merchant |
 
-The hosted server is the source of truth for tool names and schemas.
+The hosted server is the source of truth for the available actions. X Money enables actions per account, so the set can differ between users.
+
+## Skill
+
+`skills/x-money-guide/SKILL.md` tells the agent how the connection works, how to guide a user through connect, reconnect, and revoke (**X → Money → Settings → Connections**), what each refusal means, and that every action that moves money needs a fresh approval.
 
 ## Notes
 
