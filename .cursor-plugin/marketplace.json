@@ -427,6 +427,11 @@
       "name": "statsig",
       "source": "third_party/statsig",
       "description": "Inspect and manage feature gates, experiments, dynamic configs, and metrics."
+    },
+    {
+      "name": "robinhood",
+      "source": "third_party/robinhood",
+      "description": "View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account."
     }
   ]
 }
