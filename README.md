@@ -87,6 +87,7 @@ Official Cursor plugins for popular developer tools, frameworks, and SaaS produc
 | `google-cloud-bigquery` | [Google Cloud BigQuery](third_party/google-cloud-bigquery/) | Cursor | Integrations | Explore datasets and tables and run SQL queries. |
 | `statsig` | [Statsig](third_party/statsig/) | Cursor | Integrations | Inspect and manage feature gates, experiments, dynamic configs, and metrics. |
 | `robinhood` | [Robinhood](third_party/robinhood/) | Cursor | Integrations | View portfolios, positions, orders, watchlists, and market data, and trade in a Robinhood Agentic account. |
+| `coinbase` | [Coinbase](third_party/coinbase/) | Cursor | Integrations | Check balances, get quotes, and preview or place trades. |
 Author values match each plugin’s `plugin.json` `author.name` (Cursor lists `plugins@cursor.com` in the manifest).
 
 ## Repository structure
