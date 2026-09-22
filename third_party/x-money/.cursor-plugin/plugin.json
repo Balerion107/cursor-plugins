@@ -7,7 +7,7 @@
     "grokbot": "0.52.0",
     "sand": "0.52.0"
   },
-  "description": "Check balances, review transactions, send and request money on X, and pay online with a single-use virtual card.",
+  "description": "Check balances, review transactions, send and request money on X, and pay online with an X Money virtual card.",
   "author": {
     "name": "Cursor",
     "email": "plugins@cursor.com"

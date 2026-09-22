@@ -2,7 +2,7 @@
 
 Grok Bot plugin that connects agents to [X Money](https://x.com/i/money) through X Money's hosted [Model Context Protocol](https://modelcontextprotocol.io/) server at `https://mcp.money.x.com/mcp`.
 
-Check balances, review transactions, send and request money on X, and pay online with a single-use virtual card.
+Check balances, review transactions, send and request money on X, and pay online with an X Money virtual card.
 
 ## Who can use it
 
