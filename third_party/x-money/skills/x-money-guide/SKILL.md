@@ -11,7 +11,7 @@ description: >-
 
 # X Money guide
 
-This plugin connects the agent to the user's X Money account through the **X Money MCP** at `https://mcp.money.x.com/mcp`. The user connects once in Grok Bot. From then on the Cursor backend holds the connection and the agent calls X Money on the user's behalf.
+This plugin connects the agent to the user's X Money account through the **X Money MCP** at `https://mcp.money.x.com/mcp`. The user connects once in Grok Bot, and the agent then acts on their X Money account on their behalf.
 
 Discover what the user can do from the server's tool list. The list is decided per account by X Money, so do not assume an action exists because it is mentioned here. Every result carries a `message` written for the user. Relay it in your own words instead of describing internals.
 
@@ -50,7 +50,7 @@ Revoking ends the connection at once. The next X Money action fails with an auth
 
 ## Troubleshooting
 
-Match the situation, say the quoted line in your own voice, then give the one next step. Do not explain OAuth, tokens, grants, or the backend.
+Match the situation, say the quoted line in your own voice, then give the one next step. Do not explain OAuth, tokens, or how the connection works internally.
 
 ### Not connected, or authorization error on a call
 
@@ -169,4 +169,4 @@ When you retry the very same payment after a network failure, reuse the same ide
 - Never ask the user to paste a token or code into chat.
 - Never move money, request money, or create a card without a fresh approval for that exact action.
 - Never retry a refusal, an unconfirmed payment, or a limit result.
-- Never explain tokens, grants, or the backend. Name the situation and the next step.
+- Never explain tokens or how the connection works internally. Name the situation and the next step.
