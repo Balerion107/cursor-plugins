@@ -441,7 +441,7 @@
     {
       "name": "x-money",
       "source": "third_party/x-money",
-      "description": "Check balances, review transactions, send and request money on X, and pay online with an X Money virtual card."
+      "description": "Use your X Money Card, send money to users on X, manage your finances, view your balance and browse through your transaction history."
     }
   ]
 }
